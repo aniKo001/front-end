@@ -1,9 +1,10 @@
 import React, { useState } from "react"; 
 
-const useState = () => {
-     const [color, setColor] = useState("");
+export default function Home()  {
+
+  const [color, setColor] = useState("");
      return (
-        <div className={'flex space-x-4 w-full h-screen bg-${color}-800'}>
+        <div className={`flex space-x-4 w-full h-screen bg-${color}-800`}>
            <p>өнгө солих</p>
            <button 
               className="border bg-red-800 py-4 px-6"
@@ -33,4 +34,3 @@ const useState = () => {
      );
 };
 
-export default useStateTask;
